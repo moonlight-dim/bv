@@ -22,6 +22,7 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.unit.Density
 import androidx.core.view.WindowCompat
+import dev.aaa1115910.bv.component.Disclaimer
 import androidx.tv.material3.ExperimentalTvMaterial3Api
 import androidx.tv.material3.MaterialTheme
 import androidx.tv.material3.Typography
@@ -123,6 +124,8 @@ fun BVTheme(
                                 onDensityChange = {
 
                                 }
+                                
+                          if (!view.isInEditMode) Disclaimer()
                             )
                         }
                     }
